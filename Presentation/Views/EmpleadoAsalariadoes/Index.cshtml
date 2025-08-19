@@ -1,0 +1,64 @@
+﻿@model List<PayrollManagementSystem.Models.EmpleadoAsalariadoModel>
+
+@{
+    ViewData["Title"] = "Listado de Empleados Asalariados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="mb-4">📋 Listado de Empleados Asalariados</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        ➕ Crear nuevo empleado
+    </a>
+</p>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        No hay empleados registrados aún.
+    </div>
+}
+else
+{
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model[0].NumeroDeSeguro)</th>
+                <th>@Html.DisplayNameFor(model => model[0].Nombre)</th>
+                <th>@Html.DisplayNameFor(model => model[0].Apellido)</th>
+                <th>@Html.DisplayNameFor(model => model[0].TipoDeEmpleado)</th>
+                <th>@Html.DisplayNameFor(model => model[0].Salariosemanal1)</th>
+                <th>@Html.DisplayNameFor(model => model[0].Activo)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="text-center align-middle">
+                    <td>@item.NumeroDeSeguro</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Apellido</td>
+                    <td>@item.TipoDeEmpleado</td>
+                    <td>@item.Salariosemanal1.ToString("C")</td>
+                    <td>
+                        @if (item.Activo)
+                        {
+                            <span class="badge bg-success">Activo</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Inactivo</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning me-1">✏️</a>
+                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info me-1">🔍</a>
+                        <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">🗑️</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

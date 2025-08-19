@@ -1,39 +1,24 @@
-﻿using ClassLibrary1.Interfeces.Repositories;
+﻿using ClassLibrary1.Interfaces.Repositories;
 using ClassLibrary1.Interfeces.Services;
+using ClassLibrary1.Services.Base;
+using Microsoft.Extensions.Logging;
 
-namespace ClassLibrary1.Services;
-
-public class Service<T> : IService<T> where T : class
+namespace ClassLibrary1.Services
 {
-    private readonly IRepository<T> _repository;
-
-    public Service(IRepository<T> repository)
+    public class Service<T> : LoggerService, IService<T> where T : class
     {
-        _repository = repository;
-    }
+        protected readonly IRepository<T> _repository;
 
-    public async Task<IEnumerable<T>> GetAllAsync()
-    {
-        return await _repository.GetAllAsync();
-    }
+        protected Service(IRepository<T> repository, ILogger<Service<T>> logger)
+            : base(logger)
+        {
+            _repository = repository;
+        }
 
-    public async Task<T?> GetByIdAsync(int id)
-    {
-        return await _repository.GetByIdAsync(id);
-    }
-
-    public async Task AddAsync(T entity)
-    {
-        await _repository.AddAsync(entity);
-    }
-
-    public async Task UpdateAsync(T entity)
-    {
-        await _repository.UpdateAsync(entity);
-    }
-
-    public async Task DeleteAsync(int id)
-    {
-        await _repository.DeleteAsync(id);
+        public Task<IEnumerable<T>> GetAllAsync() => _repository.GetAllAsync();
+        public Task<T?> GetByIdAsync(int id) => _repository.GetByIdAsync(id);
+        public Task AddAsync(T entity) => _repository.AddAsync(entity);
+        public Task UpdateAsync(T entity) => _repository.UpdateAsync(entity);
+        public Task Disable(int id) => _repository.Disable(id);
     }
 }

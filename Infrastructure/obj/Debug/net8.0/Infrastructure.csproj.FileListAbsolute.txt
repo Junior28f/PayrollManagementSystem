@@ -36,3 +36,4 @@ C:\Users\TOSHIBA\Downloads\PayrollManagementSystem\Infrastructure\obj\Debug\net8
 C:\Users\TOSHIBA\Downloads\PayrollManagementSystem\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\TOSHIBA\Downloads\PayrollManagementSystem\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\TOSHIBA\Downloads\PayrollManagementSystem\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\TOSHIBA\Downloads\PayrollManagementSystem\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

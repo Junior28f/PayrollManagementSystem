@@ -1,13 +1,20 @@
 using ClassLibrary1;
 using Infrastructure;
+using Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
+using ClassLibrary1.Interfaces.Repositories;
+using Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddAppContext(builder.Configuration);
-builder.Services.AddRepositories();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddControllersWithViews();
 builder.Services.AddApplicationServices();
+builder.Services.AddRepositories();
 
 var app = builder.Build();
 
@@ -29,3 +36,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+    
