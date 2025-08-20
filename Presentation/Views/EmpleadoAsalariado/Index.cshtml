@@ -1,11 +1,11 @@
-﻿@model List<PayrollManagementSystem.Models.EmpleadoAsalariadoModel>
+﻿@model List<PayrollManagementSystem.Models.EmpleadoAsalariado.EmpleadoAsalariadoModel>
 
 @{
     ViewData["Title"] = "Listado de Empleados Asalariados";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="mb-4">📋 Listado de Empleados Asalariados</h1>
+<h1 class="mb-4"> Reporte Semanal de Empleados Asalariados</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-primary">
@@ -28,7 +28,7 @@ else
                 <th>@Html.DisplayNameFor(model => model[0].Nombre)</th>
                 <th>@Html.DisplayNameFor(model => model[0].Apellido)</th>
                 <th>@Html.DisplayNameFor(model => model[0].TipoDeEmpleado)</th>
-                <th>@Html.DisplayNameFor(model => model[0].Salariosemanal1)</th>
+                <th>@Html.DisplayNameFor(model => model[0].SalarioSemanal)</th>
                 <th>@Html.DisplayNameFor(model => model[0].Activo)</th>
                 <th>Acciones</th>
             </tr>
@@ -41,7 +41,7 @@ else
                     <td>@item.Nombre</td>
                     <td>@item.Apellido</td>
                     <td>@item.TipoDeEmpleado</td>
-                    <td>@item.Salariosemanal1.ToString("C")</td>
+                    <td>@item.SalarioSemanal.ToString("C")</td>
                     <td>
                         @if (item.Activo)
                         {
@@ -53,9 +53,9 @@ else
                         }
                     </td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning me-1">✏️</a>
-                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info me-1">🔍</a>
-                        <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">🗑️</a>
+                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning me-1" title="Editar">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info me-1" title="Detalles">Detalles</a>
+                        <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger" title="Desactivar">Desactivar</a>
                     </td>
                 </tr>
             }

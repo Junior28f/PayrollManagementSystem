@@ -1,15 +1,15 @@
-﻿@model List<PayrollManagementSystem.Models.EmpleadoAsalaridoPorComisionModel>
+﻿@model List<PayrollManagementSystem.Models.EmpleadoAsalaridoPorComision.EmpleadoAsalaridoPorComisionModel>
 
 @{
-    ViewData["Title"] = "Listado de Empleados por Comisión";
+    ViewData["Title"] = "Reporte Semanal de Empleados por Comisión";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="mb-4">Empleados Asalariados por Comisión</h1>
+<h1 class="mb-4">Reporte Semanal Empleados Asalariados por Comisión</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-primary">
-        ➕ Crear nuevo empleado
+        Crear nuevo empleado
     </a>
 </p>
 
@@ -57,9 +57,9 @@ else
                         }
                     </td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning me-1">✏️</a>
-                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info me-1">🔍</a>
-                        <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">🗑️</a>
+                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning me-1">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info me-1">Detalles</a>
+                        <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">Desactivar</a>
                     </td>
                 </tr>
             }

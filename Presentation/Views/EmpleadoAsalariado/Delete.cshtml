@@ -1,0 +1,52 @@
+﻿@model PayrollManagementSystem.Models.EmpleadoAsalariado.EmpleadoAsalariadoModel
+
+@{
+    ViewData["Title"] = "Desactivar Empleado Asalariado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="mb-4 text-danger"> Desactivar Empleado</h1>
+
+<h4>¿Estás seguro que deseas desactivar este empleado?</h4>
+<hr />
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-4">Número de Seguro</dt>
+            <dd class="col-sm-8">@Model.NumeroDeSeguro</dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Nombre)</dt>
+            <dd class="col-sm-8">@Model.Nombre</dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Apellido)</dt>
+            <dd class="col-sm-8">@Model.Apellido</dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.TipoDeEmpleado)</dt>
+            <dd class="col-sm-8">@Model.TipoDeEmpleado</dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.SalarioSemanal)</dt>
+            <dd class="col-sm-8">@Model.SalarioSemanal.ToString("C")</dd>
+
+            <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Activo)</dt>
+            <dd class="col-sm-8">
+                @if (Model.Activo)
+                {
+                    <span class="badge bg-success">Activo</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">Inactivo</span>
+                }
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<form asp-action="Delete" method="post" class="mt-4">
+    <input type="hidden" asp-for="NumeroDeSeguro" />
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-danger"> Confirmar Desactivación</button>
+        <a asp-action="Index" class="btn btn-secondary"> Back to List</a>
+    </div>
+</form>

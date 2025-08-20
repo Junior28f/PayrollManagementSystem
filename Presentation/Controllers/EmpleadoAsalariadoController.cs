@@ -1,24 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
+using Domain.entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PayrollManagementSystem.Models; 
+using PayrollManagementSystem.Models.EmpleadoAsalariado;
 using Infrastructure.Context;
 
 namespace PayrollManagementSystem.Controllers
 {
-    public class EmpleadoAsalariadoesController : Controller
+    public class EmpleadoAsalariadoController : Controller
     {
         private readonly AppDbContext _context;
 
-        public EmpleadoAsalariadoesController(AppDbContext context)
+        public EmpleadoAsalariadoController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: EmpleadoAsalariadoes
+        // GET: EmpleadoAsalariado
         public async Task<IActionResult> Index()
         {
             var empleados = await _context.EmpleadoAsalariados.ToListAsync();
@@ -30,13 +29,13 @@ namespace PayrollManagementSystem.Controllers
                 Apellido = e.Apellido,
                 NumeroDeSeguro = e.NumeroDeSeguro,
                 Activo = e.Activo,
-                Salariosemanal1 = e.Salariosemanal1
+                SalarioSemanal = e.Salariosemanal1
             }).ToList();
 
             return View(modelos);
         }
 
-        // GET: EmpleadoAsalariadoes/Details/5
+        // GET: EmpleadoAsalariado/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
@@ -46,33 +45,32 @@ namespace PayrollManagementSystem.Controllers
 
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoAsalariadoModel
-            {
-                TipoDeEmpleado = empleado.TipoDeEmpleado,
-                Nombre = empleado.Nombre,
-                Apellido = empleado.Apellido,
-                NumeroDeSeguro = empleado.NumeroDeSeguro,
-                Activo = empleado.Activo,
-                Salariosemanal1 = empleado.Salariosemanal1
-            };
+            var model = new DetailsEmpleadoAsalariadoModel(
+                empleado.TipoDeEmpleado,
+                empleado.Nombre,
+                empleado.Apellido,
+                empleado.NumeroDeSeguro,
+                empleado.Activo,
+                empleado.Salariosemanal1
+            );
 
             return View(model);
         }
 
-        // GET: EmpleadoAsalariadoes/Create
+        // GET: EmpleadoAsalariado/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: EmpleadoAsalariadoes/Create
+        // POST: EmpleadoAsalariado/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(EmpleadoAsalariadoModel model)
+        public async Task<IActionResult> Create(CreateEmpleadoAsalariadoModel model)
         {
             if (ModelState.IsValid)
             {
-                var entity = new EmpleadoAsalariadoModel()
+                var entity = new EmpleadoAsalariado
                 {
                     TipoDeEmpleado = model.TipoDeEmpleado,
                     Nombre = model.Nombre,
@@ -82,7 +80,7 @@ namespace PayrollManagementSystem.Controllers
                     Salariosemanal1 = model.Salariosemanal1
                 };
 
-                _context.Add(entity);
+                _context.EmpleadoAsalariados.Add(entity);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -90,7 +88,7 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoAsalariadoes/Edit/5
+        // GET: EmpleadoAsalariado/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -98,23 +96,22 @@ namespace PayrollManagementSystem.Controllers
             var empleado = await _context.EmpleadoAsalariados.FindAsync(id);
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoAsalariadoModel
-            {
-                TipoDeEmpleado = empleado.TipoDeEmpleado,
-                Nombre = empleado.Nombre,
-                Apellido = empleado.Apellido,
-                NumeroDeSeguro = empleado.NumeroDeSeguro,
-                Activo = empleado.Activo,
-                Salariosemanal1 = empleado.Salariosemanal1
-            };
+            var model = new EditEmpleadoAsalariadoModel(
+                empleado.TipoDeEmpleado,
+                empleado.Nombre,
+                empleado.Apellido,
+                empleado.NumeroDeSeguro,
+                empleado.Activo,
+                empleado.Salariosemanal1
+            );
 
             return View(model);
         }
 
-        // POST: EmpleadoAsalariadoes/Edit/5
+        // POST: EmpleadoAsalariado/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, EmpleadoAsalariadoModel model)
+        public async Task<IActionResult> Edit(int id, EditEmpleadoAsalariadoModel model)
         {
             if (id != model.NumeroDeSeguro) return NotFound();
 
@@ -148,7 +145,7 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoAsalariadoes/Delete/5
+        // GET: EmpleadoAsalariado/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
@@ -158,20 +155,19 @@ namespace PayrollManagementSystem.Controllers
 
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoAsalariadoModel
-            {
-                TipoDeEmpleado = empleado.TipoDeEmpleado,
-                Nombre = empleado.Nombre,
-                Apellido = empleado.Apellido,
-                NumeroDeSeguro = empleado.NumeroDeSeguro,
-                Activo = empleado.Activo,
-                Salariosemanal1 = empleado.Salariosemanal1
-            };
+            var model = new DisableEmpleadoAsalariado(
+                empleado.TipoDeEmpleado,
+                empleado.Nombre,
+                empleado.Apellido,
+                empleado.NumeroDeSeguro,
+                empleado.Activo,
+                empleado.Salariosemanal1
+            );
 
             return View(model);
         }
 
-        // POST: EmpleadoAsalariadoes/Delete/5
+        // POST: EmpleadoAsalariado/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

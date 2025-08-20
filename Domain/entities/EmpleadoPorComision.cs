@@ -9,7 +9,7 @@ public class EmpleadoPorComision : Empleado
     public int TarifaPorComision { get; set; }
    
      
-
+    public EmpleadoPorComision() : base() { }
     public EmpleadoPorComision(string tipoDeEmpleado,string nombre, string apellido, int numeroDeSeguro,
         int tarifaPorComision, decimal ventaBruta )
         : base(tipoDeEmpleado,nombre, apellido, numeroDeSeguro,true)

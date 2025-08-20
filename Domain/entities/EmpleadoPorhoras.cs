@@ -7,7 +7,7 @@ public class EmpleadoPorhoras : Empleado
     public int HorasTrabajadas { get; set; }
  
 
-
+public EmpleadoPorhoras(){}
     public EmpleadoPorhoras(String tipoDeEmpleado,string nombre, string apellido, int numeroDeSeguro, decimal sueldoPorhora,int horasTrabajadas) 
         : base(tipoDeEmpleado,nombre, apellido, numeroDeSeguro, true)
     {

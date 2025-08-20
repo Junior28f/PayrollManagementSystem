@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PayrollManagementSystem.Models; 
+using PayrollManagementSystem.Models;
 using Infrastructure.Context;
+using Domain.entities;
+using PayrollManagementSystem.Models.EmpleadoPorHoras;
 
 namespace PayrollManagementSystem.Controllers
 {
@@ -18,12 +18,12 @@ namespace PayrollManagementSystem.Controllers
             _context = context;
         }
 
-        // GET: EmpleadoPorhoras
+        // GET: Index
         public async Task<IActionResult> Index()
         {
             var empleados = await _context.EmpleadoPorHoras.ToListAsync();
 
-            var modelos = empleados.Select(e => new EmpleadoPorHorasModel
+            var modelos = empleados.Select(e => new EmpleadoPorHoraModel
             {
                 TipoDeEmpleado = e.TipoDeEmpleado,
                 Nombre = e.Nombre,
@@ -37,7 +37,7 @@ namespace PayrollManagementSystem.Controllers
             return View(modelos);
         }
 
-        // GET: EmpleadoPorhoras/Details/5
+        // GET: Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
@@ -47,7 +47,7 @@ namespace PayrollManagementSystem.Controllers
 
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoPorHorasModel
+            var model = new EmpleadoPorHoraModel
             {
                 TipoDeEmpleado = empleado.TipoDeEmpleado,
                 Nombre = empleado.Nombre,
@@ -61,20 +61,20 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoPorhoras/Create
+        // GET: Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: EmpleadoPorhoras/Create
+        // POST: Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(EmpleadoPorHorasModel model)
+        public async Task<IActionResult> Create(CreateEmpleadoPorHoraModel model)
         {
             if (ModelState.IsValid)
             {
-                var entity = new EmpleadoPorHorasModel()
+                var entity = new EmpleadoPorhoras
                 {
                     TipoDeEmpleado = model.TipoDeEmpleado,
                     Nombre = model.Nombre,
@@ -85,7 +85,7 @@ namespace PayrollManagementSystem.Controllers
                     HorasTrabajadas = model.HorasTrabajadas
                 };
 
-                _context.Add(entity);
+                _context.EmpleadoPorHoras.Add(entity);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -93,7 +93,7 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoPorhoras/Edit/5
+        // GET: Edit
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -101,7 +101,7 @@ namespace PayrollManagementSystem.Controllers
             var empleado = await _context.EmpleadoPorHoras.FindAsync(id);
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoPorHorasModel
+            var model = new EditEmpleadoPorHoraModel
             {
                 TipoDeEmpleado = empleado.TipoDeEmpleado,
                 Nombre = empleado.Nombre,
@@ -115,10 +115,10 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // POST: EmpleadoPorhoras/Edit/5
+        // POST: Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, EmpleadoPorHorasModel model)
+        public async Task<IActionResult> Edit(int id, EditEmpleadoPorHoraModel model)
         {
             if (id != model.NumeroDeSeguro) return NotFound();
 
@@ -153,8 +153,8 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoPorhoras/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // GET: Disable
+        public async Task<IActionResult> Disable(int? id)
         {
             if (id == null) return NotFound();
 
@@ -163,7 +163,7 @@ namespace PayrollManagementSystem.Controllers
 
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoPorHorasModel
+            var model = new DisableEmpleadoPorHoraModel
             {
                 TipoDeEmpleado = empleado.TipoDeEmpleado,
                 Nombre = empleado.Nombre,
@@ -177,15 +177,16 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // POST: EmpleadoPorhoras/Delete/5
-        [HttpPost, ActionName("Delete")]
+        // POST: Disable
+        [HttpPost, ActionName("Disable")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DisableConfirmed(int id)
         {
             var empleado = await _context.EmpleadoPorHoras.FindAsync(id);
             if (empleado != null)
             {
-                _context.EmpleadoPorHoras.Remove(empleado);
+                empleado.Activo = false;
+                _context.Update(empleado);
                 await _context.SaveChangesAsync();
             }
 

@@ -26,24 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\TOSHIBA\Downloads\PayrollManagementSystem\Presentation
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariadoes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvZXNcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariado/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariadoes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvZXNcRGVsZXRlLmNzaHRtbA==
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariado/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariadoes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvZXNcRGV0YWlscy5jc2h0bWw=
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariado/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariadoes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvZXNcRWRpdC5jc2h0bWw=
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariado/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariadoes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvZXNcSW5kZXguY3NodG1s
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalariado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComisions/Create.cshtml]

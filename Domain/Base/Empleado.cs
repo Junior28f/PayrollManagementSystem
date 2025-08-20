@@ -5,7 +5,7 @@ namespace Domain.Base
     public abstract class Empleado
     {
         private int tipoDeEmpleado;
-        private bool v;
+ 
 
         public string TipoDeEmpleado { get; set; }
         public string Nombre { get; set; }
@@ -34,7 +34,7 @@ namespace Domain.Base
             Nombre = nombre;
             Apellido = apellido;
             NumeroDeSeguro = numeroDeSeguro;
-            this.v = v;
+           
         }
 
         public abstract decimal Calcularpago();

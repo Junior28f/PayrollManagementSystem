@@ -1,10 +1,10 @@
-﻿@model List<PayrollManagementSystem.Models.EmpleadoPorHorasModel>
+﻿@model List<PayrollManagementSystem.Models.EmpleadoPorHoras.EmpleadoPorHoraModel>
 
 @{
-    ViewData["Title"] = "Listado de Empleados por Horas";
+    ViewData["Title"] = "Reporte Semanal de Empleados por Horas";
 }
 
-<h1 class="mb-4">Empleados por Horas</h1>
+<h1 class="mb-4"> Reporte Semanal de Empleados por Horas</h1>
 
 <p>
     <a asp-action="Create" class="btn btn-primary">
@@ -48,7 +48,7 @@
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning">Editar</a>
                     <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info">Detalles</a>
-                    <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">Eliminar</a>
+                    <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">Desactivar</a>
                 </td>
             </tr>
         }

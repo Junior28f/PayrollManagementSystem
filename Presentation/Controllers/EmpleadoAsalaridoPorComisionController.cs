@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PayrollManagementSystem.Models; 
+using PayrollManagementSystem.Models.EmpleadoAsalaridoPorComision;
 using Infrastructure.Context;
+using Domain.entities;
 
 namespace PayrollManagementSystem.Controllers
 {
@@ -18,7 +17,7 @@ namespace PayrollManagementSystem.Controllers
             _context = context;
         }
 
-        // GET: EmpleadoAsalaridoPorComisions
+        // GET: EmpleadoAsalaridoPorComision
         public async Task<IActionResult> Index()
         {
             var empleados = await _context.EmpleadoAsalaridoPorComision.ToListAsync();
@@ -38,7 +37,7 @@ namespace PayrollManagementSystem.Controllers
             return View(modelos);
         }
 
-        // GET: EmpleadoAsalaridoPorComisions/Details/5
+        // GET: Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
@@ -63,20 +62,20 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoAsalaridoPorComisions/Create
+        // GET: Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: EmpleadoAsalaridoPorComisions/Create
+        // POST: Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(EmpleadoAsalaridoPorComisionModel model)
         {
             if (ModelState.IsValid)
             {
-                var entity = new EmpleadoAsalaridoPorComisionModel()
+                var entity = new EmpleadoAsalaridoPorComision
                 {
                     TipoDeEmpleado = model.TipoDeEmpleado,
                     Nombre = model.Nombre,
@@ -88,7 +87,7 @@ namespace PayrollManagementSystem.Controllers
                     TarifaPorComision = model.TarifaPorComision
                 };
 
-                _context.Add(entity);
+                _context.EmpleadoAsalaridoPorComision.Add(entity);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -96,7 +95,7 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoAsalaridoPorComisions/Edit/5
+        // GET: Edit
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null) return NotFound();
@@ -104,7 +103,7 @@ namespace PayrollManagementSystem.Controllers
             var empleado = await _context.EmpleadoAsalaridoPorComision.FindAsync(id);
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoAsalaridoPorComisionModel
+            var model = new EditEmpleadoAsalaridoPorComisionModel
             {
                 TipoDeEmpleado = empleado.TipoDeEmpleado,
                 Nombre = empleado.Nombre,
@@ -119,10 +118,10 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // POST: EmpleadoAsalaridoPorComisions/Edit/5
+        // POST: Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, EmpleadoAsalaridoPorComisionModel model)
+        public async Task<IActionResult> Edit(int id, EditEmpleadoAsalaridoPorComisionModel model)
         {
             if (id != model.NumeroDeSeguro) return NotFound();
 
@@ -158,8 +157,8 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // GET: EmpleadoAsalaridoPorComisions/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // GET: Disable
+        public async Task<IActionResult> Disable(int? id)
         {
             if (id == null) return NotFound();
 
@@ -168,7 +167,7 @@ namespace PayrollManagementSystem.Controllers
 
             if (empleado == null) return NotFound();
 
-            var model = new EmpleadoAsalaridoPorComisionModel
+            var model = new DisableEmpleadoAsalaridoPorComisionModel
             {
                 TipoDeEmpleado = empleado.TipoDeEmpleado,
                 Nombre = empleado.Nombre,
@@ -183,15 +182,16 @@ namespace PayrollManagementSystem.Controllers
             return View(model);
         }
 
-        // POST: EmpleadoAsalaridoPorComisions/Delete/5
-        [HttpPost, ActionName("Delete")]
+        // POST: Disable
+        [HttpPost, ActionName("Disable")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DisableConfirmed(int id)
         {
             var empleado = await _context.EmpleadoAsalaridoPorComision.FindAsync(id);
             if (empleado != null)
             {
-                _context.EmpleadoAsalaridoPorComision.Remove(empleado);
+                empleado.Activo = false;
+                _context.Update(empleado);
                 await _context.SaveChangesAsync();
             }
 

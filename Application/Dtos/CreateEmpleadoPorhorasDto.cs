@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary1.Dtos.DtoMetodos
+﻿namespace ClassLibrary1.Dtos
 {
     public record CreateEmpleadoPorhorasDto
     {
