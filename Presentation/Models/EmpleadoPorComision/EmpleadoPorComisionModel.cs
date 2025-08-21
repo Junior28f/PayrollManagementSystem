@@ -4,6 +4,11 @@ namespace PayrollManagementSystem.Models.EmpleadoPorComision
 {
     public class EmpleadoPorComisionModel : EmpleadoBaseModel
     {
+        public decimal VentasBrutas { get; set; }
+        
+        public int TarifaPorComision { get; set; }
+     
+
         public EmpleadoPorComisionModel(
             string tipoDeEmpleado,
             string nombre,
@@ -11,8 +16,9 @@ namespace PayrollManagementSystem.Models.EmpleadoPorComision
             int numeroDeSeguro,
             bool activo,
             decimal ventasBrutas,
-           int tarifaPorComision )
-            : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo)
+           int tarifaPorComision,
+            decimal pagoSemanal)
+            : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo, pagoSemanal)
         {
             VentasBrutas = ventasBrutas;
             TarifaPorComision = tarifaPorComision;
@@ -24,14 +30,14 @@ namespace PayrollManagementSystem.Models.EmpleadoPorComision
         }
 
 
-        public decimal VentasBrutas { get; set; }
-        
-        public int TarifaPorComision { get; set; }
        
+
 
         public decimal CalcularPago()
         {
             return VentasBrutas * TarifaPorComision ;
         }
+
+      
     }
 }

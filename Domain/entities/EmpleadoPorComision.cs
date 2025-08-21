@@ -8,11 +8,12 @@ public class EmpleadoPorComision : Empleado
     public decimal VentaBruta { get; set; }
     public int TarifaPorComision { get; set; }
    
-     
+
+
     public EmpleadoPorComision() : base() { }
     public EmpleadoPorComision(string tipoDeEmpleado,string nombre, string apellido, int numeroDeSeguro,
-        int tarifaPorComision, decimal ventaBruta )
-        : base(tipoDeEmpleado,nombre, apellido, numeroDeSeguro,true)
+        int tarifaPorComision, decimal ventaBruta, decimal pagoSemanal )
+        : base(tipoDeEmpleado,nombre, apellido, numeroDeSeguro,true,  pagoSemanal)
     {
         
         this.TarifaPorComision = tarifaPorComision;

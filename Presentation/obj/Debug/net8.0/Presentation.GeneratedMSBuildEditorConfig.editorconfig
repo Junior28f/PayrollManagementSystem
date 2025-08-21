@@ -46,24 +46,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpYWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComisions/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvbnNcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComision/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComisions/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvbnNcRGVsZXRlLmNzaHRtbA==
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComision/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComisions/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvbnNcRGV0YWlscy5jc2h0bWw=
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComision/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComisions/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvbnNcRWRpdC5jc2h0bWw=
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComision/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComisions/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvbnNcSW5kZXguY3NodG1s
+[C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoAsalaridoPorComision/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9Bc2FsYXJpZG9Qb3JDb21pc2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/TOSHIBA/Downloads/PayrollManagementSystem/Presentation/Views/EmpleadoPorComisions/Create.cshtml]

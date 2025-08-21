@@ -4,53 +4,52 @@
     ViewData["Title"] = "Reporte Semanal de Empleados por Horas";
 }
 
-<h1 class="mb-4"> Reporte Semanal de Empleados por Horas</h1>
+<h1 class="mb-4">Reporte Semanal de Empleados por Horas</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">
-        <i class="bi bi-plus-circle"></i> Nuevo Empleado
-    </a>
-</p>
+<a asp-action="Create" style="background-color: #007BFF; color: white; padding: 5px 10px; text-decoration: none; border-radius: 3px;">
+    Crear nuevo empleado
+</a>
 
-<table class="table table-bordered table-striped">
-    <thead class="table-dark">
-        <tr>
-            <th>@Html.DisplayNameFor(model => model[0].NumeroDeSeguro)</th>
-            <th>@Html.DisplayNameFor(model => model[0].Nombre)</th>
-            <th>@Html.DisplayNameFor(model => model[0].Apellido)</th>
-            <th>@Html.DisplayNameFor(model => model[0].TipoDeEmpleado)</th>
-            <th>@Html.DisplayNameFor(model => model[0].SueldoPorhora)</th>
-            <th>@Html.DisplayNameFor(model => model[0].HorasTrabajadas)</th>
-            <th>@Html.DisplayNameFor(model => model[0].Activo)</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+@if (!Model.Any())
+{
+    <p>No hay empleados registrados aún.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
             <tr>
-                <td>@item.NumeroDeSeguro</td>
-                <td>@item.Nombre</td>
-                <td>@item.Apellido</td>
-                <td>@item.TipoDeEmpleado</td>
-                <td>@item.SueldoPorhora.ToString("C")</td>
-                <td>@item.HorasTrabajadas</td>
-                <td>
-                    @if (item.Activo)
-                    {
-                        <span class="badge bg-success">Activo</span>
-                    }
-                    else
-                    {
-                        <span class="badge bg-secondary">Inactivo</span>
-                    }
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning">Editar</a>
-                    <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info">Detalles</a>
-                    <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">Desactivar</a>
-                </td>
+                <th>@Html.DisplayNameFor(model => model[0].NumeroDeSeguro)</th>
+                <th>@Html.DisplayNameFor(model => model[0].Nombre)</th>
+                <th>@Html.DisplayNameFor(model => model[0].Apellido)</th>
+                <th>@Html.DisplayNameFor(model => model[0].TipoDeEmpleado)</th>
+                <th>@Html.DisplayNameFor(model => model[0].SueldoPorhora)</th>
+                <th>@Html.DisplayNameFor(model => model[0].HorasTrabajadas)</th>
+                <th>@Html.DisplayNameFor(model => model[0].Activo)</th>
+                <th>@Html.DisplayNameFor(model => model[0].PagoSemanal)</th>
+                <th>Acciones</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NumeroDeSeguro</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Apellido</td>
+                    <td>@item.TipoDeEmpleado</td>
+                    <td>@item.SueldoPorhora.ToString("C")</td>
+                    <td>@item.HorasTrabajadas</td>
+                    <td>@(item.Activo ? "Activo" : "Inactivo")</td>
+                    <td>@item.CalcularPago().ToString("C")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro">Detalles</a> |
+                        <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro">Desactivar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

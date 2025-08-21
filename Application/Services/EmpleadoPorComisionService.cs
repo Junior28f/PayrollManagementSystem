@@ -32,7 +32,8 @@ namespace ClassLibrary1.Services
                 apellido: dto.Apellido,
                 numeroDeSeguro: dto.NumeroDeSeguro,
                 ventaBruta: dto.VentaBruta,
-                tarifaPorComision: dto.TarifaPorComision
+                tarifaPorComision: dto.TarifaPorComision,
+                pagoSemanal: dto.PagoSemanal
             );
 
             await AddAsync(entity);

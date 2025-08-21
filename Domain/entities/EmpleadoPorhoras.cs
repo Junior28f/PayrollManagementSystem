@@ -8,8 +8,8 @@ public class EmpleadoPorhoras : Empleado
  
 
 public EmpleadoPorhoras(){}
-    public EmpleadoPorhoras(String tipoDeEmpleado,string nombre, string apellido, int numeroDeSeguro, decimal sueldoPorhora,int horasTrabajadas) 
-        : base(tipoDeEmpleado,nombre, apellido, numeroDeSeguro, true)
+    public EmpleadoPorhoras(String tipoDeEmpleado,string nombre, string apellido, int numeroDeSeguro, decimal sueldoPorhora,int horasTrabajadas, decimal pagoSemanal) 
+        : base(tipoDeEmpleado,nombre, apellido, numeroDeSeguro, true, pagoSemanal)
     {
      
         this.SueldoPorhora = sueldoPorhora;
@@ -20,15 +20,14 @@ public EmpleadoPorhoras(){}
     {
         if (HorasTrabajadas <= 40)
         {
-            return (decimal)(SueldoPorhora * HorasTrabajadas);
+            return SueldoPorhora * HorasTrabajadas;
         }
         else
         {
-            
-            return (decimal)((SueldoPorhora * 40) + (SueldoPorhora * (decimal)1.5 * HorasTrabajadas -40));
+            int horasExtras = HorasTrabajadas - 40;
+            return (SueldoPorhora * 40) + (SueldoPorhora * 1.5m * horasExtras);
         }
-
-        
     }
+
 }
 

@@ -13,8 +13,9 @@ namespace PayrollManagementSystem.Models.EmpleadoAsalaridoPorComision
             bool activo,
             int salarioBase,
             decimal ventaBruta,
-            decimal tarifaPorComision)
-            : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo)
+            decimal tarifaPorComision,
+            decimal pagoSemanal)
+            : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo, pagoSemanal)
         {
             SalarioBase = salarioBase;
             VentaBruta = ventaBruta;
@@ -33,5 +34,7 @@ namespace PayrollManagementSystem.Models.EmpleadoAsalaridoPorComision
         {
             return SalarioBase + (VentaBruta * TarifaPorComision);
         }
+
+       
     }
 }

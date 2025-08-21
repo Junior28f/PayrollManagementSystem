@@ -1,28 +1,25 @@
 ﻿@model List<PayrollManagementSystem.Models.EmpleadoAsalaridoPorComision.EmpleadoAsalaridoPorComisionModel>
 
 @{
-    ViewData["Title"] = "Reporte Semanal de Empleados por Comisión";
+    ViewData["Title"] = "Reporte de Empleados Asalariados por Comisión";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="mb-4">Reporte Semanal Empleados Asalariados por Comisión</h1>
+<h1 class="mb-4">Reporte de Empleados Asalariados por Comisión</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">
-        Crear nuevo empleado
-    </a>
-</p>
+<a asp-action="Create" style="background-color: #007BFF; color: white; padding: 5px 10px; text-decoration: none; border-radius: 3px;">
+    Crear nuevo empleado
+</a>
 
 @if (!Model.Any())
 {
-    <div class="alert alert-info">
-        No hay empleados registrados aún.
-    </div>
+    <p>No hay empleados registrados aún.</p>
 }
 else
 {
-    <table class="table table-hover table-bordered">
-        <thead class="table-dark text-center">
+    <table class="table">
+        <thead>
             <tr>
                 <th>@Html.DisplayNameFor(model => model[0].NumeroDeSeguro)</th>
                 <th>@Html.DisplayNameFor(model => model[0].Nombre)</th>
@@ -32,34 +29,27 @@ else
                 <th>@Html.DisplayNameFor(model => model[0].VentaBruta)</th>
                 <th>@Html.DisplayNameFor(model => model[0].TarifaPorComision)</th>
                 <th>@Html.DisplayNameFor(model => model[0].Activo)</th>
+                <th>@Html.DisplayNameFor(model => model[0].PagoSemanal)</th>
                 <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
-                <tr class="text-center align-middle">
+                <tr>
                     <td>@item.NumeroDeSeguro</td>
                     <td>@item.Nombre</td>
                     <td>@item.Apellido</td>
                     <td>@item.TipoDeEmpleado</td>
                     <td>@item.SalarioBase.ToString("C")</td>
                     <td>@item.VentaBruta.ToString("C")</td>
-                    <td>@item.TarifaPorComision %</td>
+                    <td>@item.TarifaPorComision.ToString("P")</td>
+                    <td>@(item.Activo ? "Activo" : "Inactivo")</td>
+                    <td>@item.CalcularPago().ToString("C")</td>
                     <td>
-                        @if (item.Activo)
-                        {
-                            <span class="badge bg-success">Activo</span>
-                        }
-                        else
-                        {
-                            <span class="badge bg-secondary">Inactivo</span>
-                        }
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-warning me-1">Editar</a>
-                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-info me-1">Detalles</a>
-                        <a asp-action="Delete" asp-route-id="@item.NumeroDeSeguro" class="btn btn-sm btn-danger">Desactivar</a>
+                        <a asp-action="Edit" asp-route-id="@item.NumeroDeSeguro">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.NumeroDeSeguro">Detalles</a> |
+                        <a asp-action="Disable" asp-route-id="@item.NumeroDeSeguro">Desactivar</a>
                     </td>
                 </tr>
             }

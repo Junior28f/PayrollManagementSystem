@@ -11,8 +11,8 @@ public class EmpleadoAsalaridoPorComision : Empleado
    
     public EmpleadoAsalaridoPorComision() : base() { }
    
-    public EmpleadoAsalaridoPorComision(string tipoDeEmpleado, string nombre, string apellido, int numeroDeSeguro, int salarioBase, decimal ventaBruta, int tarifaPorComision)
-        : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, true)
+    public EmpleadoAsalaridoPorComision(string tipoDeEmpleado, string nombre, string apellido, int numeroDeSeguro, int salarioBase, decimal ventaBruta, int tarifaPorComision, decimal pagoSemanal)
+        : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, true, pagoSemanal)
     {
         this.SalarioBase = salarioBase;
         this.VentaBruta = ventaBruta;

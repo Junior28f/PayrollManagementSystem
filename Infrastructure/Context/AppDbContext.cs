@@ -18,23 +18,22 @@ public class AppDbContext : DbContext
    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
-
         modelBuilder.Entity<EmpleadoAsalariado>()
-            .Property(e => e.Salariosemanal1)
-            .HasPrecision(18, 2);
-
-        modelBuilder.Entity<EmpleadoPorComision>()
-            .Property(e => e.VentaBruta)
+            .Property(e => e.PagoSemanal)
             .HasPrecision(18, 2);
 
         modelBuilder.Entity<EmpleadoAsalaridoPorComision>()
-            .Property(e => e.VentaBruta)
+            .Property(e => e.PagoSemanal)
+            .HasPrecision(18, 2);
+
+        modelBuilder.Entity<EmpleadoPorComision>()
+            .Property(e => e.PagoSemanal)
             .HasPrecision(18, 2);
 
         modelBuilder.Entity<EmpleadoPorhoras>()
-            .Property(e => e.SueldoPorhora)
+            .Property(e => e.PagoSemanal)
             .HasPrecision(18, 2);
     }
+
 
 }

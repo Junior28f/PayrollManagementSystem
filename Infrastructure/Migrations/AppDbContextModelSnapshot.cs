@@ -40,8 +40,11 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Salariosemanal1")
+                    b.Property<decimal>("PagoSemanal")
                         .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("SalarioSemanal")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("TipoDeEmpleado")
@@ -72,6 +75,10 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("PagoSemanal")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<int>("SalarioBase")
                         .HasColumnType("int");
 
@@ -83,7 +90,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("VentaBruta")
-                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("NumeroDeSeguro");
@@ -110,6 +116,10 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("PagoSemanal")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<int>("TarifaPorComision")
                         .HasColumnType("int");
 
@@ -118,7 +128,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("VentaBruta")
-                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("NumeroDeSeguro");
@@ -148,8 +157,11 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("SueldoPorhora")
+                    b.Property<decimal>("PagoSemanal")
                         .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("SueldoPorhora")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("TipoDeEmpleado")

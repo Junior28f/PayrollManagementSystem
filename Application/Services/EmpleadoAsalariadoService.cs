@@ -28,11 +28,11 @@ namespace ClassLibrary1.Services
             if (dto is null) throw new ArgumentNullException(nameof(dto));
 
             var entity = new EmpleadoAsalariado(
-                tipoDeEmpleado: "Empleado Asalariado",
+                tipoDeEmpleado1: "Empleado Asalariado",
                 nombre: dto.Nombre,
                 apellido: dto.Apellido,
                 numeroDeSeguro: dto.NumeroDeSeguro,
-                salariosemanal1: (int)dto.SalarioSemanal
+                salarioSemanal:dto.SalarioSemanal
             );
 
 
@@ -49,7 +49,7 @@ namespace ClassLibrary1.Services
                 throw new KeyNotFoundException($"Empleado con id {id} no encontrado");
 
             entity.NumeroDeSeguro = dto.NumeroDeSeguro;
-            entity.Salariosemanal1 = Convert.ToDecimal(dto.SalarioSemanal);
+            entity.SalarioSemanal = Convert.ToDecimal(dto.SalarioSemanal);
 
             await UpdateAsync(entity);
             LogInformation("Empleado asalariado actualizado: Id {id}", id);
@@ -90,19 +90,19 @@ namespace ClassLibrary1.Services
                     throw new ArgumentNullException(nameof(empleado));
                 }
 
-                if (empleado.Salariosemanal1 <= 0)
+                if (empleado.SalarioSemanal <= 0)
                 {
                     LogWarning("Salario inválido ({salario}) para empleado {nss}",
-                        empleado.Salariosemanal1,
+                        empleado.SalarioSemanal,
                         empleado.NumeroDeSeguro);
                     throw new ArgumentException(
                         "El salario semanal debe ser mayor que cero.",
-                        nameof(empleado.Salariosemanal1));
+                        nameof(empleado.SalarioSemanal));
                 }
 
                 LogInformation("Calculando pago para NSS: {nss}", empleado.NumeroDeSeguro);
 
-                var pago = empleado.Salariosemanal1; // Regla: asalariado cobra su salario semanal
+                var pago = empleado.SalarioSemanal; 
 
                 LogInformation("Pago calculado para NSS: {nss} = {pago}",
                     empleado.NumeroDeSeguro, pago);

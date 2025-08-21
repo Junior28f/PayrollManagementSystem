@@ -2,8 +2,8 @@
 
 public class DetailsEmpleadoAsalariadoModel : EmpleadoAsalariadoModel
 {
-    public DetailsEmpleadoAsalariadoModel(string tipoDeEmpleado, string nombre, string apellido, int numeroDeSeguro, bool activo, decimal salarioSemanal)
-        : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo, salarioSemanal)
+    public DetailsEmpleadoAsalariadoModel(string tipoDeEmpleado, string nombre, string apellido, int numeroDeSeguro, bool activo, decimal salarioSemanal, decimal pagoSemanal)
+        : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo, salarioSemanal, pagoSemanal)
     {
     }
    

@@ -1,22 +1,28 @@
 ﻿using Domain.Base;
 
-namespace Domain.entities;
-
-public class EmpleadoAsalariado : Empleado
+namespace Domain.entities
 {
-    public decimal Salariosemanal1 { get; set; }
-
-    public EmpleadoAsalariado() : base() { } 
-
-    public EmpleadoAsalariado(string tipoDeEmpleado, string nombre, string apellido, int numeroDeSeguro, decimal salariosemanal1)
-        : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, true)
+    public class EmpleadoAsalariado : Empleado
     {
-        this.TipoDeEmpleado = "Empleado Asalariado";
-        this.Salariosemanal1 = salariosemanal1;
-    }
+        public decimal SalarioSemanal { get; set; }
+        
 
-    public override decimal Calcularpago()
-    {
-        return Salariosemanal1;
+
+        public EmpleadoAsalariado() : base() 
+        {
+            TipoDeEmpleado = "Empleado Asalariado";
+        }
+
+        public EmpleadoAsalariado(string tipoDeEmpleado1, string nombre, string apellido, int numeroDeSeguro,
+            decimal salarioSemanal)
+            : base("Empleado Asalariado", nombre, apellido, numeroDeSeguro, true, salarioSemanal)
+        {
+            SalarioSemanal = salarioSemanal;
+        }
+
+        public override decimal Calcularpago()
+        {
+            return SalarioSemanal;
+        }
     }
 }

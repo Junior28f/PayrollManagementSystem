@@ -32,7 +32,8 @@ namespace ClassLibrary1.Services
                 apellido: dto.Apellido,
                 numeroDeSeguro: dto.NumeroDeSeguro,
                 sueldoPorhora: dto.SueldoPorhora,
-                horasTrabajadas: dto.HorasTrabajadas
+                horasTrabajadas: dto.HorasTrabajadas,
+                pagoSemanal: dto.PagoSemanal
             );
 
             await AddAsync(entity);

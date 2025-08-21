@@ -138,7 +138,7 @@ namespace Infrastructure.Repositories
                
                 existente.Nombre = empleadoAsalariado.Nombre;
                 existente.Apellido = empleadoAsalariado.Apellido;
-                existente.Salariosemanal1 = empleadoAsalariado.Salariosemanal1 ;
+                existente.SalarioSemanal = empleadoAsalariado.SalarioSemanal ;
                 existente.NumeroDeSeguro = empleadoAsalariado.NumeroDeSeguro;
                 existente.TipoDeEmpleado = empleadoAsalariado.TipoDeEmpleado;
                 existente.Activo = empleadoAsalariado.Activo;

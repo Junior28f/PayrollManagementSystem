@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Controllers\\EmpleadoPorComisionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presentation\\Controllers\\EmpleadoPorComisionsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|c:\\users\\toshiba\\downloads\\payrollmanagementsystem\\presentation\\views\\empleadoasalaridoporcomision\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\empleadoasalaridoporcomision\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250818221222_segunda_Migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20250818221222_segunda_Migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|c:\\users\\toshiba\\downloads\\payrollmanagementsystem\\presentation\\controllers\\empleadoasalaridoporcomisioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\empleadoasalaridoporcomisioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\controllers\\empleadoporhorascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:presentation\\controllers\\empleadoporhorascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|c:\\users\\toshiba\\downloads\\payrollmanagementsystem\\presentation\\models\\empleadoasalaridoporcomision\\disableempleadoasalaridoporcomisionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\models\\empleadoasalaridoporcomision\\disableempleadoasalaridoporcomisionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A802E59-73B2-44A3-9417-C60249366668}|Infrastructure\\Infrastructure.csproj|c:\\users\\toshiba\\downloads\\payrollmanagementsystem\\infrastructure\\migrations\\20250820151150_terceramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A802E59-73B2-44A3-9417-C60249366668}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20250820151150_terceramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250820150416_TerceraMigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20250820150416_TerceraMigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\controllers\\empleadoporcomisionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\empleadoporcomisionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\controllers\\empleadoasalaridoporcomisionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,24 +55,32 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:presentation\\views\\empleadoasalariadoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\models\\empleadoasalariadomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:presentation\\models\\empleadoasalariadomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\controllers\\empleadoporhorascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\empleadoporhorascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4BBDE9-A96F-4B78-90A1-05ADC590AE2E}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A802E59-73B2-44A3-9417-C60249366668}|Infrastructure\\Infrastructure.csproj|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A802E59-73B2-44A3-9417-C60249366668}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A802E59-73B2-44A3-9417-C60249366668}|Infrastructure\\Infrastructure.csproj|C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250818221222_segunda_Migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A802E59-73B2-44A3-9417-C60249366668}|Infrastructure\\Infrastructure.csproj|solutionrelative:Infrastructure\\Migrations\\20250818221222_segunda_Migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,8 +90,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DisableEmpleadoAsalaridoPorComisionModel.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Models\\EmpleadoAsalaridoPorComision\\DisableEmpleadoAsalaridoPorComisionModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Models\\EmpleadoAsalaridoPorComision\\DisableEmpleadoAsalaridoPorComisionModel.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Models\\EmpleadoAsalaridoPorComision\\DisableEmpleadoAsalaridoPorComisionModel.cs",
+              "RelativeToolTip": "Presentation\\Models\\EmpleadoAsalaridoPorComision\\DisableEmpleadoAsalaridoPorComisionModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T03:03:43.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Views\\EmpleadoAsalaridoPorComision\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\EmpleadoAsalaridoPorComision\\Index.cshtml",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Views\\EmpleadoAsalaridoPorComision\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\EmpleadoAsalaridoPorComision\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T02:55:51.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpleadoAsalaridoPorComisionController.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Controllers\\EmpleadoAsalaridoPorComisionController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\EmpleadoAsalaridoPorComisionController.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Controllers\\EmpleadoAsalaridoPorComisionController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\EmpleadoAsalaridoPorComisionController.cs",
+              "ViewState": "AQIAAAcAAABAlpmZmZkVwA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T02:46:45.217Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -94,7 +153,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "20250820151150_TerceraMigracion.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250820151150_TerceraMigracion.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250820151150_TerceraMigracion.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250820151150_TerceraMigracion.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20250820151150_TerceraMigracion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T15:11:54.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250820150416_TerceraMigracion.cs",
+              "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250820150416_TerceraMigracion.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250820150416_TerceraMigracion.cs",
+              "ToolTip": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250820150416_TerceraMigracion.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20250820150416_TerceraMigracion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T15:04:16.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EmpleadoPorComisionsController.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Controllers\\EmpleadoPorComisionsController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\EmpleadoPorComisionsController.cs",
@@ -102,12 +186,11 @@
               "RelativeToolTip": "Presentation\\Controllers\\EmpleadoPorComisionsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T23:16:07.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T23:16:07.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "EmpleadoPorhorasController.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Controllers\\EmpleadoPorhorasController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\EmpleadoPorhorasController.cs",
@@ -119,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "EmpleadoAsalaridoPorComisionsController.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Controllers\\EmpleadoAsalaridoPorComisionsController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\EmpleadoAsalaridoPorComisionsController.cs",
@@ -131,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Views\\EmpleadoAsalariadoes\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\EmpleadoAsalariadoes\\Index.cshtml",
@@ -143,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Views\\EmpleadoAsalariadoes\\Edit.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\EmpleadoAsalariadoes\\Edit.cshtml",
@@ -155,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Views\\EmpleadoAsalariadoes\\Details.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\EmpleadoAsalariadoes\\Details.cshtml",
@@ -167,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Views\\EmpleadoAsalariadoes\\Delete.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\EmpleadoAsalariadoes\\Delete.cshtml",
@@ -179,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "EmpleadoAsalariadoesController.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Controllers\\EmpleadoAsalariadoesController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\EmpleadoAsalariadoesController.cs",
@@ -191,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Views\\EmpleadoAsalariadoes\\Create.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\EmpleadoAsalariadoes\\Create.cshtml",
@@ -203,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Presentation\\appsettings.Development.json",
@@ -215,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\appsettings.json",
               "RelativeDocumentMoniker": "Presentation\\appsettings.json",
@@ -227,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
@@ -239,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Context\\AppDbContext.cs",
@@ -251,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "20250818221222_segunda_Migration.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Infrastructure\\Migrations\\20250818221222_segunda_Migration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250818221222_segunda_Migration.cs",
@@ -263,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "EmpleadoAsalariadoModel.cs",
               "DocumentMoniker": "C:\\Users\\TOSHIBA\\Downloads\\PayrollManagementSystem\\Presentation\\Models\\EmpleadoAsalariadoModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Models\\EmpleadoAsalariadoModel.cs",

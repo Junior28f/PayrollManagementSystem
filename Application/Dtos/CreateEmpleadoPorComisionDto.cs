@@ -13,6 +13,5 @@ public record CreateEmpleadoPorComisionDto
     public int SalarioBase { get; set; }
     public int VentaBruta { get; set; }
     public int TarifaPorComision { get; set; }
-    
-   
+    public decimal PagoSemanal { get; set; }
 }

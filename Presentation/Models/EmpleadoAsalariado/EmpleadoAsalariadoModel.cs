@@ -10,8 +10,10 @@ namespace PayrollManagementSystem.Models.EmpleadoAsalariado
             string apellido,
             int numeroDeSeguro,
             bool activo,
-            decimal salarioSemanal)
-            : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo)
+            decimal salarioSemanal ,
+                decimal pagoSemanal )
+        
+            : base(tipoDeEmpleado, nombre, apellido, numeroDeSeguro, activo, pagoSemanal)
         {
             SalarioSemanal = salarioSemanal;
         }
@@ -19,6 +21,12 @@ namespace PayrollManagementSystem.Models.EmpleadoAsalariado
         public EmpleadoAsalariadoModel() : base() { } 
 
         public decimal SalarioSemanal { get; set; }
-        
+
+
+        public decimal CalcularPago()
+        {
+            return SalarioSemanal;
+
+        }
     }
 }

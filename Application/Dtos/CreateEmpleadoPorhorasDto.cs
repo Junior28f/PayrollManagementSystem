@@ -8,5 +8,6 @@
         public int HorasTrabajadas { get; set; }
         public bool Activo { get; set; }
         public int NumeroDeSeguro { get; set; }
+        public decimal PagoSemanal { get; set; }
     }
 }
